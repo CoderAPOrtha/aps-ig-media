@@ -1,0 +1,65 @@
+{
+  "timezone": "Europe/Berlin",
+  "accounts": [
+    "@cyclo.fine",
+    "@aportha.de",
+    "@aporthasports",
+    "@cellufine.de",
+    "@collal.eu"
+  ],
+  "items": [
+    {
+      "id": "P1",
+      "account": "@cyclo.fine",
+      "title": "Deine Tage. Deine Worte.",
+      "kind": "Still",
+      "status": "live",
+      "date": "2026-08-30",
+      "link": "https://www.instagram.com/p/DcqoXLBm9cv/"
+    },
+    {
+      "id": "P2",
+      "account": "@cyclo.fine",
+      "title": "Terracotta Deine Tage. Deine Worte.",
+      "kind": "Still",
+      "status": "live",
+      "date": "2026-08-30",
+      "link": "https://www.instagram.com/p/DcqqSYUG3Z2/"
+    },
+    {
+      "id": "P3",
+      "account": "@cyclo.fine",
+      "title": "Manchmal planst du die Woche drum herum.",
+      "kind": "Still",
+      "status": "live",
+      "date": "2026-08-30",
+      "link": "https://www.instagram.com/p/Dcqs6pmG9o4/"
+    },
+    {
+      "id": "R1",
+      "account": "@cyclo.fine",
+      "title": "Umfrage-Initial",
+      "kind": "Text-Reel",
+      "status": "live",
+      "date": "2026-09-01",
+      "link": "https://www.instagram.com/reel/Dcvy0LFAu6u/"
+    },
+    {
+      "id": "R2",
+      "account": "@cyclo.fine",
+      "title": "Hol dir deine Tage zurück + Umfrage",
+      "kind": "Text-Reel",
+      "stumm": true,
+      "status": "geparkt",
+      "date": null
+    },
+    {
+      "id": "R3",
+      "account": "@cyclo.fine",
+      "title": "Website-Frau Take 2",
+      "kind": "Talking Head",
+      "status": "geparkt",
+      "date": null
+    }
+  ]
+}
