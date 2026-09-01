@@ -15,7 +15,8 @@
       "kind": "Still",
       "status": "live",
       "date": "2026-08-30",
-      "link": "https://www.instagram.com/p/DcqoXLBm9cv/"
+      "link": "https://www.instagram.com/p/DcqoXLBm9cv/",
+      "cover": "p1-cyclo-fine.jpg"
     },
     {
       "id": "P2",
@@ -24,7 +25,8 @@
       "kind": "Still",
       "status": "live",
       "date": "2026-08-30",
-      "link": "https://www.instagram.com/p/DcqqSYUG3Z2/"
+      "link": "https://www.instagram.com/p/DcqqSYUG3Z2/",
+      "cover": "p2-cyclo-fine.jpg"
     },
     {
       "id": "P3",
@@ -33,7 +35,8 @@
       "kind": "Still",
       "status": "live",
       "date": "2026-08-30",
-      "link": "https://www.instagram.com/p/Dcqs6pmG9o4/"
+      "link": "https://www.instagram.com/p/Dcqs6pmG9o4/",
+      "cover": "p3-cyclo-fine.jpg"
     },
     {
       "id": "R1",
@@ -42,7 +45,9 @@
       "kind": "Text-Reel",
       "status": "live",
       "date": "2026-09-01",
-      "link": "https://www.instagram.com/reel/Dcvy0LFAu6u/"
+      "link": "https://www.instagram.com/reel/Dcvy0LFAu6u/",
+      "cover": "r1-umfrage-initial-cover.png",
+      "video": "r1-umfrage-initial.mp4"
     },
     {
       "id": "R2",
@@ -51,7 +56,9 @@
       "kind": "Text-Reel",
       "stumm": true,
       "status": "geparkt",
-      "date": null
+      "date": null,
+      "cover": "r2-tage-zurueck-umfrage-cover.png",
+      "video": "r2-tage-zurueck-umfrage.mp4"
     },
     {
       "id": "R3",
@@ -59,7 +66,10 @@
       "title": "Website-Frau Take 2",
       "kind": "Talking Head",
       "status": "geparkt",
-      "date": null
+      "date": null,
+      "cover": "r3-website-frau-cover.jpg",
+      "video": "r3-website-frau-chat.mp4"
     }
-  ]
+  ],
+  "wishes": []
 }

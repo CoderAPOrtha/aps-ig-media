@@ -9,55 +9,67 @@
 :root{--creme:#FAF8F6;--paper:#FFFDFA;--tinte:#1A2233;--muted:#6E6C68;--line:#E4DED8;--akzent:#E4A493;--terra:#A85A44;--live:#5A7A68;--soft:#B4B0AA}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:Inter,ui-sans-serif,system-ui,sans-serif;background:var(--creme);color:var(--tinte)}
-.wrap{max-width:1100px;margin:0 auto;padding:28px 18px 64px}
+.wrap{max-width:1100px;margin:0 auto;padding:28px 18px 72px}
 .kicker{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--terra)}
 h1{font-family:"Playfair Display",Georgia,serif;font-weight:400;font-size:clamp(28px,6vw,40px);margin:6px 0 8px}
-.meta{color:var(--muted);font-size:14px;margin-bottom:18px}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.meta{color:var(--muted);font-size:14px;margin-bottom:16px}
+.top{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin-bottom:18px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
 .chip{border:1px solid var(--line);background:var(--paper);color:var(--muted);border-radius:999px;padding:6px 12px;font-size:13px}
 .chip.on{background:var(--tinte);color:var(--creme);border-color:var(--tinte)}
-.label{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
-.label.live{color:var(--live)}
+button.primary,button.ghost{font-family:inherit;cursor:pointer;border-radius:999px;padding:8px 16px;font-size:14px}
+button.primary{background:var(--tinte);color:var(--creme);border:0}
+button.ghost{background:var(--paper);border:1px solid var(--line);color:var(--tinte)}
+.label{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:22px 0 10px}
+.label.live{color:var(--live);margin-top:0}
 .label.park{color:var(--terra)}
-.live{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin-bottom:28px}
-.pill{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:14px 16px;text-decoration:none;color:inherit;display:block}
-.pill .nr{font-size:11px;color:var(--live);margin-bottom:4px}
-.pill .t{font-size:15px}
-.pill .d{font-size:13px;color:var(--muted);margin-top:6px}
-.week-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;overflow:hidden;cursor:pointer;text-align:left;font:inherit;color:inherit;padding:0;display:block;width:100%}
+.card img,.thumb{width:100%;aspect-ratio:9/16;object-fit:cover;background:#eee;display:block}
+.card .body{padding:12px 14px 14px}
+.card .nr{font-size:11px;color:var(--live)}
+.card.parked .nr{color:var(--terra)}
+.card .t{font-size:15px;margin-top:4px}
+.card .d{font-size:12px;color:var(--muted);margin-top:6px}
+.week-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
 .week-nav{display:flex;align-items:center;gap:8px}
 .week-nav button{border:1px solid var(--line);background:var(--paper);border-radius:999px;width:36px;height:36px;font-size:18px;cursor:pointer}
 .week-nav .range{font-size:13px;color:var(--muted)}
-.grid{overflow-x:auto;border:1px solid var(--line);border-radius:16px;background:var(--paper);margin-bottom:28px}
+.grid{overflow-x:auto;border:1px solid var(--line);border-radius:16px;background:var(--paper);margin-top:10px}
 table{width:100%;border-collapse:collapse;min-width:720px}
 th,td{text-align:left;padding:10px 8px;font-size:13px;border-bottom:1px solid var(--line);vertical-align:top}
 th{font-weight:400;color:var(--muted);font-size:11px;letter-spacing:.06em;text-transform:uppercase}
 th .dt{display:block;font-family:"Playfair Display",Georgia,serif;font-size:16px;color:var(--tinte);text-transform:none;letter-spacing:0;margin-top:2px}
 th.today,.td-today{background:#FBF1EE}
 td.acct{width:140px;color:var(--muted);white-space:nowrap}
-tr.active td.acct{color:var(--tinte)}
-.cell-item{font-family:"Playfair Display",Georgia,serif;font-size:16px}
+.cell-item{font-family:"Playfair Display",Georgia,serif;font-size:16px;background:none;border:0;cursor:pointer;color:inherit;font:inherit;font-family:"Playfair Display",Georgia,serif;font-size:16px;padding:0}
 .cell-item small{display:block;font-family:Inter,sans-serif;font-size:11px;color:var(--live);margin-top:2px}
 .frei{color:var(--soft)}
-.park{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}
-.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:18px 20px;border-left:6px solid var(--akzent)}
-.card .nr{font-family:"Playfair Display",Georgia,serif;font-size:28px}
-.card .acct{font-size:12px;color:var(--terra);margin-top:6px}
-.card .t{font-size:16px;margin-top:6px}
-.card .k{font-size:13px;color:var(--muted);margin-top:4px}
-.card .s{font-size:13px;color:var(--terra);margin-top:16px}
-footer{margin-top:32px;font-size:12px;color:var(--muted)}
-a.pill:hover{border-color:var(--akzent)}
+footer{margin-top:36px;font-size:12px;color:var(--muted)}
+dialog{border:0;border-radius:18px;padding:0;max-width:min(440px,94vw);width:100%;background:var(--paper);color:var(--tinte)}
+dialog::backdrop{background:rgba(26,34,51,.45)}
+.dlg{padding:18px}
+.dlg video,.dlg img{width:100%;border-radius:12px;background:#111;max-height:70vh}
+.dlg h2{font-family:"Playfair Display",Georgia,serif;font-weight:400;font-size:24px;margin:12px 0 6px}
+.dlg p{color:var(--muted);font-size:14px;margin:4px 0}
+.dlg a{color:var(--terra)}
+.dlg .row{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+form label{display:block;font-size:12px;color:var(--muted);margin:10px 0 4px}
+form input,form select,form textarea{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;font:inherit;background:#fff}
+.wish{border:1px dashed var(--akzent);border-radius:14px;padding:14px;background:var(--paper)}
 </style>
 </head>
 <body>
 <div class="wrap">
   <div class="kicker">Instagram · fünf Konten</div>
-  <h1>Postplanung</h1>
+  <div class="top">
+    <h1>Postplanung</h1>
+    <button class="primary" type="button" id="btnNeu">Neu</button>
+  </div>
   <p class="meta" id="meta"></p>
   <div class="chips" id="chips"></div>
-  <div class="label live">Live</div>
-  <div class="live" id="live"></div>
+  <div class="label live">Live — antippen zum Ansehen</div>
+  <div class="cards" id="live"></div>
   <div class="week-head">
     <div class="label" style="margin:0">Diese Woche</div>
     <div class="week-nav">
@@ -67,57 +79,112 @@ a.pill:hover{border-color:var(--akzent)}
     </div>
   </div>
   <div class="grid"><table><thead id="thead"></thead><tbody id="tbody"></tbody></table></div>
-  <div class="label park">Geparkt</div>
-  <div class="park" id="park"></div>
-  <footer>P = Still · R = Reel · Vier Konten ohne Queue. Zellen leer, bis etwas live ist. Das ist eine Übersicht, kein Publish.</footer>
+  <div class="label park">Geparkt — antippen zum Ansehen</div>
+  <div class="cards" id="park"></div>
+  <div class="label">Wünsche</div>
+  <div class="cards" id="wishes"></div>
+  <footer>P = Still · R = Reel · Neu ist ein Wunsch, kein Render und kein Publish. Leere Zellen bleiben leer.</footer>
 </div>
+<dialog id="view">
+  <div class="dlg">
+    <div id="viewMedia"></div>
+    <h2 id="viewTitle"></h2>
+    <p id="viewMeta"></p>
+    <p id="viewLink"></p>
+    <div class="row"><button class="ghost" type="button" id="viewClose">Schließen</button></div>
+  </div>
+</dialog>
+<dialog id="neu">
+  <form class="dlg" id="neuForm">
+    <h2>Neuer Wunsch</h2>
+    <p>Kein Render, kein Publish. Nur merken.</p>
+    <label for="nAcc">Konto</label>
+    <select id="nAcc" required></select>
+    <label for="nTyp">Typ</label>
+    <select id="nTyp" required>
+      <option value="Still">Still</option>
+      <option value="Reel">Reel</option>
+    </select>
+    <label for="nTitle">Titel</label>
+    <input id="nTitle" required maxlength="80" placeholder="Ein Satz">
+    <label for="nNote">Notiz</label>
+    <textarea id="nNote" rows="3" maxlength="400" placeholder="Was soll drauf, optional"></textarea>
+    <div class="row">
+      <button class="primary" type="submit">Merken</button>
+      <button class="ghost" type="button" id="neuClose">Abbrechen</button>
+    </div>
+  </form>
+</dialog>
 <script>
-const FALLBACK = {"timezone":"Europe/Berlin","accounts":["@cyclo.fine","@aportha.de","@aporthasports","@cellufine.de","@collal.eu"],"items":[{"id":"P1","account":"@cyclo.fine","title":"Deine Tage. Deine Worte.","kind":"Still","status":"live","date":"2026-08-30","link":"https://www.instagram.com/p/DcqoXLBm9cv/"},{"id":"P2","account":"@cyclo.fine","title":"Terracotta Deine Tage. Deine Worte.","kind":"Still","status":"live","date":"2026-08-30","link":"https://www.instagram.com/p/DcqqSYUG3Z2/"},{"id":"P3","account":"@cyclo.fine","title":"Manchmal planst du die Woche drum herum.","kind":"Still","status":"live","date":"2026-08-30","link":"https://www.instagram.com/p/Dcqs6pmG9o4/"},{"id":"R1","account":"@cyclo.fine","title":"Umfrage-Initial","kind":"Text-Reel","status":"live","date":"2026-09-01","link":"https://www.instagram.com/reel/Dcvy0LFAu6u/"},{"id":"R2","account":"@cyclo.fine","title":"Hol dir deine Tage zurück + Umfrage","kind":"Text-Reel","stumm":true,"status":"geparkt","date":null},{"id":"R3","account":"@cyclo.fine","title":"Website-Frau Take 2","kind":"Talking Head","status":"geparkt","date":null}]};
+const FALLBACK = {"timezone":"Europe/Berlin","accounts":["@cyclo.fine","@aportha.de","@aporthasports","@cellufine.de","@collal.eu"],"items":[],"wishes":[]};
 const WD = ["Mo","Di","Mi","Do","Fr","Sa","So"];
+const WKEY = "postplanung-wishes-v1";
 let state = FALLBACK;
 let monday = startOfWeek(new Date(new Date().toLocaleString("en-US",{timeZone:"Europe/Berlin"})));
-
-function startOfWeek(d){
-  const x = new Date(d.getFullYear(), d.getMonth(), d.getDate());
-  const day = (x.getDay()+6)%7;
-  x.setDate(x.getDate()-day);
-  return x;
-}
+function startOfWeek(d){const x=new Date(d.getFullYear(),d.getMonth(),d.getDate());x.setDate(x.getDate()-((x.getDay()+6)%7));return x}
 function iso(d){return d.toISOString().slice(0,10)}
 function ddmm(d){return String(d.getDate()).padStart(2,"0")+"."+String(d.getMonth()+1).padStart(2,"0")}
 function days(){return [...Array(7)].map((_,i)=>{const x=new Date(monday);x.setDate(monday.getDate()+i);return x})}
-function fmtDE(isoStr){if(!isoStr)return "";const [y,m,d]=isoStr.split("-");return d+"."+m+"."+y}
-
+function fmtDE(s){if(!s)return "";const [y,m,d]=s.split("-");return d+"."+m+"."+y}
+function wishes(){try{return JSON.parse(localStorage.getItem(WKEY)||"[]")}catch(e){return []}}
+function saveWishes(w){localStorage.setItem(WKEY,JSON.stringify(w))}
+function card(it, parked){
+  const cover = it.cover ? `<img src="${it.cover}" alt="">` : `<div class="thumb"></div>`;
+  return `<button class="card${parked?" parked":""}" type="button" data-id="${it.id}">${cover}<div class="body"><div class="nr">${it.account} · ${it.id}</div><div class="t">${it.title}</div><div class="d">${it.date?fmtDE(it.date):"kein Datum"}</div></div></button>`;
+}
+function openView(it){
+  const m = document.getElementById("viewMedia");
+  if(it.video) m.innerHTML = `<video controls playsinline poster="${it.cover||""}" src="${it.video}"></video>`;
+  else if(it.cover) m.innerHTML = `<img src="${it.cover}" alt="">`;
+  else m.innerHTML = "";
+  document.getElementById("viewTitle").textContent = it.id+" · "+it.title;
+  document.getElementById("viewMeta").textContent = [it.account, it.kind, it.stumm?"stumm":"", it.status, it.date?fmtDE(it.date):"kein Datum"].filter(Boolean).join(" · ");
+  document.getElementById("viewLink").innerHTML = it.link ? `<a href="${it.link}" target="_blank" rel="noopener">Auf Instagram</a>` : "";
+  document.getElementById("view").showModal();
+}
+function byId(id){return state.items.find(x=>x.id===id)}
 function render(){
   const todayIso = iso(new Date(new Date().toLocaleString("en-US",{timeZone:"Europe/Berlin"})));
-  document.getElementById("meta").textContent = "Europe/Berlin · Stand "+fmtDE(todayIso)+" · nur was live ist, hat ein Datum";
+  document.getElementById("meta").textContent = "Europe/Berlin · Stand "+fmtDE(todayIso)+" · antippen öffnet das Stück";
   document.getElementById("chips").innerHTML = state.accounts.map((a,i)=>`<span class="chip${i===0?" on":""}">${a}</span>`).join("");
-  const live = state.items.filter(it=>it.status==="live");
-  document.getElementById("live").innerHTML = live.map(it=>{
-    const inner = `<div class="nr">${it.account} · ${it.id}</div><div class="t">${it.title}</div><div class="d">${fmtDE(it.date)}</div>`;
-    return it.link ? `<a class="pill" href="${it.link}" target="_blank" rel="noopener">${inner}</a>` : `<div class="pill">${inner}</div>`;
-  }).join("");
+  document.getElementById("nAcc").innerHTML = state.accounts.map(a=>`<option>${a}</option>`).join("");
+  document.getElementById("live").innerHTML = state.items.filter(it=>it.status==="live").map(it=>card(it,false)).join("");
+  document.getElementById("park").innerHTML = state.items.filter(it=>it.status==="geparkt"||!it.date).map(it=>card(it,true)).join("");
   const ds = days();
   document.getElementById("range").textContent = ddmm(ds[0])+" – "+ddmm(ds[6])+"."+ds[6].getFullYear();
   document.getElementById("thead").innerHTML = "<tr><th>Konto</th>"+ds.map(d=>{
-    const t = iso(d)===todayIso ? " class=\"today\"" : "";
+    const t = iso(d)===todayIso?" class=\"today\"":"";
     return `<th${t}>${WD[(d.getDay()+6)%7]}<span class="dt">${ddmm(d)}</span></th>`;
   }).join("")+"</tr>";
   document.getElementById("tbody").innerHTML = state.accounts.map((acct,ai)=>{
     const cells = ds.map(d=>{
       const id = iso(d);
       const hit = state.items.filter(it=>it.account===acct && it.date===id);
-      const today = id===todayIso ? " td-today" : "";
+      const today = id===todayIso?" td-today":"";
       if(!hit.length) return `<td class="frei${today}">frei</td>`;
-      return `<td class="${today}">`+hit.map(it=>`<div class="cell-item">${it.id}<small>${it.status}</small></div>`).join("")+"</td>";
+      return `<td class="${today}">`+hit.map(it=>`<button class="cell-item" type="button" data-id="${it.id}">${it.id}<small>${it.status}</small></button>`).join("")+"</td>";
     }).join("");
-    return `<tr class="${ai===0?"active":""}"><td class="acct">${acct}</td>${cells}</tr>`;
+    return `<tr><td class="acct">${acct}</td>${cells}</tr>`;
   }).join("");
-  const park = state.items.filter(it=>it.status==="geparkt" || !it.date);
-  document.getElementById("park").innerHTML = park.map(it=>`
-    <div class="card"><div class="nr">${it.id}</div><div class="acct">${it.account}</div><div class="t">${it.title}</div><div class="k">${it.kind}${it.stumm?", stumm":""}</div><div class="s">kein Datum</div></div>
-  `).join("") || `<p class="meta">Nichts geparkt.</p>`;
+  const w = wishes();
+  document.getElementById("wishes").innerHTML = w.length ? w.map((x,i)=>`<div class="wish"><div class="nr">${x.account} · ${x.typ}</div><div class="t">${x.title}</div><div class="d">${x.note||""}</div></div>`).join("") : `<p class="meta">Keine Wünsche in diesem Browser.</p>`;
 }
+document.addEventListener("click", e=>{
+  const b = e.target.closest("[data-id]");
+  if(b){const it=byId(b.dataset.id); if(it) openView(it);}
+});
+document.getElementById("viewClose").onclick=()=>document.getElementById("view").close();
+document.getElementById("btnNeu").onclick=()=>document.getElementById("neu").showModal();
+document.getElementById("neuClose").onclick=()=>document.getElementById("neu").close();
+document.getElementById("neuForm").onsubmit=e=>{
+  e.preventDefault();
+  const w = wishes();
+  w.push({account:nAcc.value,typ:nTyp.value,title:nTitle.value.trim(),note:nNote.value.trim(),at:new Date().toISOString()});
+  saveWishes(w);
+  nTitle.value=""; nNote.value="";
+  document.getElementById("neu").close();
+  render();
+};
 document.getElementById("prev").onclick=()=>{monday.setDate(monday.getDate()-7);render()};
 document.getElementById("next").onclick=()=>{monday.setDate(monday.getDate()+7);render()};
 fetch("postplanung.json",{cache:"no-store"}).then(r=>r.ok?r.json():null).then(j=>{if(j&&j.items) state=j; render()}).catch(render);
