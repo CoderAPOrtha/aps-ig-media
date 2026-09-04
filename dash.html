@@ -70,6 +70,8 @@ form input,form select,form textarea{width:100%;padding:10px 12px;border:1px sol
   <div class="chips" id="chips"></div>
   <div class="label live">Live — antippen zum Ansehen</div>
   <div class="cards" id="live"></div>
+  <div class="label park" id="reviewLabel">Review heute — Umfrage-Reels (antippen, Player starten)</div>
+  <div class="cards" id="review"></div>
   <div class="week-head">
     <div class="label" style="margin:0">Diese Woche</div>
     <div class="week-nav">
@@ -83,7 +85,7 @@ form input,form select,form textarea{width:100%;padding:10px 12px;border:1px sol
   <div class="cards" id="park"></div>
   <div class="label">Wünsche</div>
   <div class="cards" id="wishes"></div>
-  <footer>P = Still · R = Reel · Neu ist ein Wunsch, kein Render und kein Publish. Leere Zellen bleiben leer.</footer>
+  <footer>P = Still · R = Reel · UP = Umfrage-Review · Neu ist ein Wunsch, kein Render und kein Publish. Leere Zellen bleiben leer.</footer>
 </div>
 <dialog id="view">
   <div class="dlg">
@@ -148,8 +150,11 @@ function render(){
   document.getElementById("meta").textContent = "Europe/Berlin · Stand "+fmtDE(todayIso)+" · antippen öffnet das Stück";
   document.getElementById("chips").innerHTML = state.accounts.map((a,i)=>`<span class="chip${i===0?" on":""}">${a}</span>`).join("");
   document.getElementById("nAcc").innerHTML = state.accounts.map(a=>`<option>${a}</option>`).join("");
-  document.getElementById("live").innerHTML = state.items.filter(it=>it.status==="live").map(it=>card(it,false)).join("");
-  document.getElementById("park").innerHTML = state.items.filter(it=>it.status==="geparkt"||!it.date).map(it=>card(it,true)).join("");
+document.getElementById("live").innerHTML = state.items.filter(it=>it.status==="live").map(it=>card(it,false)).join("");
+  const rev = state.items.filter(it=>it.status==="review");
+  document.getElementById("reviewLabel").style.display = rev.length?"":"none";
+  document.getElementById("review").innerHTML = rev.map(it=>card(it,true)).join("");
+  document.getElementById("park").innerHTML = state.items.filter(it=>(it.status==="geparkt"||(!it.date && it.status!=="review" && it.status!=="live"))).map(it=>card(it,true)).join("");
   const ds = days();
   document.getElementById("range").textContent = ddmm(ds[0])+" – "+ddmm(ds[6])+"."+ds[6].getFullYear();
   document.getElementById("thead").innerHTML = "<tr><th>Konto</th>"+ds.map(d=>{
@@ -187,7 +192,7 @@ document.getElementById("neuForm").onsubmit=e=>{
 };
 document.getElementById("prev").onclick=()=>{monday.setDate(monday.getDate()-7);render()};
 document.getElementById("next").onclick=()=>{monday.setDate(monday.getDate()+7);render()};
-fetch("postplanung.json?v=19b25e4",{cache:"no-store"}).then(r=>r.ok?r.json():null).then(j=>{if(j&&j.items) state=j; render()}).catch(render);
+fetch("postplanung.json?v=c91e7be-review",{cache:"no-store"}).then(r=>r.ok?r.json():null).then(j=>{if(j&&j.items) state=j; render()}).catch(render);
 render();
 </script>
 </body>
