@@ -187,7 +187,7 @@ document.getElementById("neuForm").onsubmit=e=>{
 };
 document.getElementById("prev").onclick=()=>{monday.setDate(monday.getDate()-7);render()};
 document.getElementById("next").onclick=()=>{monday.setDate(monday.getDate()+7);render()};
-fetch("postplanung.json",{cache:"no-store"}).then(r=>r.ok?r.json():null).then(j=>{if(j&&j.items) state=j; render()}).catch(render);
+fetch("postplanung.json?v=19b25e4",{cache:"no-store"}).then(r=>r.ok?r.json():null).then(j=>{if(j&&j.items) state=j; render()}).catch(render);
 render();
 </script>
 </body>
