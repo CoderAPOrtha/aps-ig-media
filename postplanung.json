@@ -69,6 +69,39 @@
       "date": null,
       "cover": "r3-website-frau-cover.jpg",
       "video": "r3-website-frau-chat.mp4"
+    },
+    {
+      "id": "UP2",
+      "account": "@cyclo.fine",
+      "title": "Umfrage · Stimmen sammeln",
+      "kind": "Reel",
+      "status": "geparkt",
+      "date": "2026-09-04",
+      "cover": "umfrage-p2-cover.png",
+      "video": "umfrage-p2-reel-stimmen-20260904-chat.mp4",
+      "note": "Freigabepaket 2 · nicht live · Chat-Player kaputt, Review hier"
+    },
+    {
+      "id": "UP4",
+      "account": "@cyclo.fine",
+      "title": "Umfrage · Mach mit Mein Zyklus-Gefühl",
+      "kind": "Reel",
+      "status": "geparkt",
+      "date": "2026-09-04",
+      "cover": "umfrage-p4-cover.png",
+      "video": "umfrage-p4-reel-mach-mit-20260904-chat.mp4",
+      "note": "Freigabepaket 4 · nicht live · Review hier"
+    },
+    {
+      "id": "UP5",
+      "account": "@cyclo.fine",
+      "title": "Umfrage · Stimme in Umfrage, nicht Kommentare",
+      "kind": "Reel",
+      "status": "geparkt",
+      "date": "2026-09-04",
+      "cover": "umfrage-p5-cover.png",
+      "video": "umfrage-p5-reel-stimme-umfrage-20260904-chat.mp4",
+      "note": "Freigabepaket 5 · nicht live · Review hier"
     }
   ],
   "wishes": []
