@@ -73,35 +73,35 @@
     {
       "id": "UP2",
       "account": "@cyclo.fine",
-      "title": "Umfrage · Stimmen sammeln",
+      "title": "Umfrage · Stimmen sammeln (Compiler)",
       "kind": "Reel",
       "status": "review",
       "date": "2026-09-04",
-      "cover": "umfrage-p2-cover.png",
-      "video": "umfrage-p2-reel-stimmen-20260904-chat.mp4",
-      "note": "Freigabepaket 2 · nicht live · Chat-Player kaputt, Review hier"
+      "cover": "umfrage-p2-stimmen-compiler-20260904-1408-cover.png",
+      "video": "umfrage-p2-stimmen-compiler-20260904-1408-chat.mp4",
+      "note": "Remake reel-compiler, eu_ki=false, nicht live"
     },
     {
       "id": "UP4",
       "account": "@cyclo.fine",
-      "title": "Umfrage · Mach mit Mein Zyklus-Gefühl",
+      "title": "Umfrage · Mach mit Mein Zyklus-Gefühl (Compiler)",
       "kind": "Reel",
       "status": "review",
       "date": "2026-09-04",
-      "cover": "umfrage-p4-cover.png",
-      "video": "umfrage-p4-reel-mach-mit-20260904-chat.mp4",
-      "note": "Freigabepaket 4 · nicht live · Review hier"
+      "cover": "umfrage-p4-mach-mit-compiler-20260904-1408-cover.png",
+      "video": "umfrage-p4-mach-mit-compiler-20260904-1408-chat.mp4",
+      "note": "Remake reel-compiler, eu_ki=false, nicht live"
     },
     {
       "id": "UP5",
       "account": "@cyclo.fine",
-      "title": "Umfrage · Stimme in Umfrage, nicht Kommentare",
+      "title": "Umfrage · Stimme in Umfrage (Compiler)",
       "kind": "Reel",
       "status": "review",
       "date": "2026-09-04",
-      "cover": "umfrage-p5-cover.png",
-      "video": "umfrage-p5-reel-stimme-umfrage-20260904-chat.mp4",
-      "note": "Freigabepaket 5 · nicht live · Review hier"
+      "cover": "umfrage-p5-stimme-compiler-20260904-1408-cover.png",
+      "video": "umfrage-p5-stimme-compiler-20260904-1408-chat.mp4",
+      "note": "Remake reel-compiler, eu_ki=false, nicht live"
     }
   ],
   "wishes": []

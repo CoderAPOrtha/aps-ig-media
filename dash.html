@@ -192,7 +192,7 @@ document.getElementById("neuForm").onsubmit=e=>{
 };
 document.getElementById("prev").onclick=()=>{monday.setDate(monday.getDate()-7);render()};
 document.getElementById("next").onclick=()=>{monday.setDate(monday.getDate()+7);render()};
-fetch("postplanung.json?v=c91e7be-review",{cache:"no-store"}).then(r=>r.ok?r.json():null).then(j=>{if(j&&j.items) state=j; render()}).catch(render);
+fetch("postplanung.json?v=compiler-1408",{cache:"no-store"}).then(r=>r.ok?r.json():null).then(j=>{if(j&&j.items) state=j; render()}).catch(render);
 render();
 </script>
 </body>
