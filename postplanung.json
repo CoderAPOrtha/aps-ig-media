@@ -113,6 +113,56 @@
       "cover": "umfrage-reel02-v4-draft-20260905-1228-cover.png",
       "video": "umfrage-reel02-v4-draft-20260905-1228-chat.mp4",
       "note": "Draft Vera Pillow/ffmpeg, kein Badge, nichts live ohne POSTEN"
+    },
+    {
+      "id": "U1",
+      "account": "@cyclo.fine",
+      "title": "Umfrage · Vollzeitjob / zusätzlicher Job",
+      "kind": "Karussell",
+      "status": "review",
+      "date": "2026-09-13",
+      "cover": "u1-vollzeitjob-cover.jpg",
+      "note": "Codex-ZIP A · Lina+Brand ok · warte POSTEN"
+    },
+    {
+      "id": "U2",
+      "account": "@cyclo.fine",
+      "title": "Umfrage · Niemand hat es gesagt",
+      "kind": "Karussell",
+      "status": "review",
+      "date": "2026-09-13",
+      "cover": "u2-niemand-gesagt-cover.jpg",
+      "note": "Codex-ZIP B · Lina+Brand ok · warte POSTEN"
+    },
+    {
+      "id": "U3",
+      "account": "@cyclo.fine",
+      "title": "Umfrage · Mit sechzehn",
+      "kind": "Karussell",
+      "status": "review",
+      "date": "2026-09-13",
+      "cover": "u3-mit-sechzehn-cover.jpg",
+      "note": "Codex-ZIP C · Lina+Brand ok · warte POSTEN"
+    },
+    {
+      "id": "U4",
+      "account": "@cyclo.fine",
+      "title": "Umfrage · Verständnis",
+      "kind": "Karussell",
+      "status": "review",
+      "date": "2026-09-13",
+      "cover": "u4-verstaendnis-cover.jpg",
+      "note": "Codex-ZIP D · Lina+Brand ok · warte POSTEN"
+    },
+    {
+      "id": "U5",
+      "account": "@cyclo.fine",
+      "title": "Umfrage · Guter Tag",
+      "kind": "Karussell",
+      "status": "review",
+      "date": "2026-09-13",
+      "cover": "u5-guter-tag-cover.jpg",
+      "note": "Codex-ZIP E · Lina+Brand ok · warte POSTEN"
     }
   ],
   "wishes": []
