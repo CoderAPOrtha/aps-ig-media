@@ -50,6 +50,86 @@
       "video": "r1-umfrage-initial.mp4"
     },
     {
+      "id": "K1",
+      "account": "@cyclo.fine",
+      "title": "Kalender · Mein Kalender kennt meinen Zyklus nicht",
+      "kind": "Karussell",
+      "status": "live",
+      "date": "2026-09-13",
+      "link": "https://www.instagram.com/p/DdOpM7uG_DV/",
+      "cover": "k1-kalender-01-20260913.jpg"
+    },
+    {
+      "id": "CB",
+      "account": "@cyclo.fine",
+      "title": "Creator-Collab · Creatorinnen gesucht",
+      "kind": "Karussell",
+      "status": "live",
+      "date": "2026-09-13",
+      "link": "https://www.instagram.com/p/DdO6OnMG-IA/",
+      "cover": "codex-b-collab-01-20260913.jpg"
+    },
+    {
+      "id": "U1",
+      "account": "@cyclo.fine",
+      "title": "Umfrage · Vollzeitjob / zusätzlicher Job",
+      "kind": "Karussell",
+      "status": "geplant",
+      "date": "2026-09-15",
+      "cover": "u1-vollzeitjob-cover.jpg",
+      "note": "Codex-ZIP A · Lina+Brand ok · braucht POSTEN"
+    },
+    {
+      "id": "U2",
+      "account": "@cyclo.fine",
+      "title": "Umfrage · Niemand hat es gesagt",
+      "kind": "Karussell",
+      "status": "geplant",
+      "date": "2026-09-16",
+      "cover": "u2-niemand-gesagt-cover.jpg",
+      "note": "Codex-ZIP B · Lina+Brand ok · braucht POSTEN"
+    },
+    {
+      "id": "U3",
+      "account": "@cyclo.fine",
+      "title": "Umfrage · Mit sechzehn",
+      "kind": "Karussell",
+      "status": "geplant",
+      "date": "2026-09-17",
+      "cover": "u3-mit-sechzehn-cover.jpg",
+      "note": "Codex-ZIP C · Lina+Brand ok · braucht POSTEN"
+    },
+    {
+      "id": "U4",
+      "account": "@cyclo.fine",
+      "title": "Umfrage · Verständnis",
+      "kind": "Karussell",
+      "status": "geplant",
+      "date": "2026-09-18",
+      "cover": "u4-verstaendnis-cover.jpg",
+      "note": "Codex-ZIP D · Lina+Brand ok · braucht POSTEN"
+    },
+    {
+      "id": "U5",
+      "account": "@cyclo.fine",
+      "title": "Umfrage · Guter Tag",
+      "kind": "Karussell",
+      "status": "geplant",
+      "date": "2026-09-19",
+      "cover": "u5-guter-tag-cover.jpg",
+      "note": "Codex-ZIP E · Lina+Brand ok · braucht POSTEN"
+    },
+    {
+      "id": "IC2",
+      "account": "@cyclo.fine",
+      "title": "Influencer-Creator IC-v2",
+      "kind": "Karussell",
+      "status": "geplant",
+      "date": "2026-09-22",
+      "cover": "ic-v2-01-cover.jpg",
+      "note": "Stehend freigegeben Di 22.09. 10:00 Berlin · Jules"
+    },
+    {
       "id": "R2",
       "account": "@cyclo.fine",
       "title": "Hol dir deine Tage zurück + Umfrage",
@@ -75,94 +155,47 @@
       "account": "@cyclo.fine",
       "title": "Umfrage · Stimmen sammeln (Compiler)",
       "kind": "Reel",
-      "status": "review",
-      "date": "2026-09-04",
-      "cover": "umfrage-p2-stimmen-compiler-20260904-1408-cover.png",
-      "video": "umfrage-p2-stimmen-compiler-20260904-1408-chat.mp4",
-      "note": "Remake reel-compiler, eu_ki=false, nicht live"
+      "status": "geparkt",
+      "date": null,
+      "cover": "umfrage-p2-stimmen-compiler-20260904-1408-cover.png"
     },
     {
       "id": "UP4",
       "account": "@cyclo.fine",
       "title": "Umfrage · Mach mit Mein Zyklus-Gefühl (Compiler)",
       "kind": "Reel",
-      "status": "review",
-      "date": "2026-09-04",
-      "cover": "umfrage-p4-mach-mit-compiler-20260904-1408-cover.png",
-      "video": "umfrage-p4-mach-mit-compiler-20260904-1408-chat.mp4",
-      "note": "Remake reel-compiler, eu_ki=false, nicht live"
+      "status": "geparkt",
+      "date": null,
+      "cover": "umfrage-p4-mach-mit-compiler-20260904-1408-cover.png"
     },
     {
       "id": "UP5",
       "account": "@cyclo.fine",
       "title": "Umfrage · Stimme in Umfrage (Compiler)",
       "kind": "Reel",
-      "status": "review",
-      "date": "2026-09-04",
-      "cover": "umfrage-p5-stimme-compiler-20260904-1408-cover.png",
-      "video": "umfrage-p5-stimme-compiler-20260904-1408-chat.mp4",
-      "note": "Remake reel-compiler, eu_ki=false, nicht live"
+      "status": "geparkt",
+      "date": null,
+      "cover": "umfrage-p5-stimme-compiler-20260904-1408-cover.png"
     },
     {
       "id": "REEL02",
       "account": "@cyclo.fine",
       "title": "Umfrage · PMS-Tage Welches eine Wort (reel02 v4)",
       "kind": "Text-Reel",
-      "status": "review",
-      "date": "2026-09-05",
-      "cover": "umfrage-reel02-v4-draft-20260905-1228-cover.png",
-      "video": "umfrage-reel02-v4-draft-20260905-1228-chat.mp4",
-      "note": "Draft Vera Pillow/ffmpeg, kein Badge, nichts live ohne POSTEN"
+      "status": "geparkt",
+      "date": null,
+      "cover": "umfrage-reel02-v4-draft-20260905-1228-cover.png"
     },
     {
-      "id": "U1",
+      "id": "RV2",
       "account": "@cyclo.fine",
-      "title": "Umfrage · Vollzeitjob / zusätzlicher Job",
-      "kind": "Karussell",
+      "title": "Face-Reel Remotion v2",
+      "kind": "Reel",
       "status": "review",
-      "date": "2026-09-13",
-      "cover": "u1-vollzeitjob-cover.jpg",
-      "note": "Codex-ZIP A · Lina+Brand ok · warte POSTEN"
-    },
-    {
-      "id": "U2",
-      "account": "@cyclo.fine",
-      "title": "Umfrage · Niemand hat es gesagt",
-      "kind": "Karussell",
-      "status": "review",
-      "date": "2026-09-13",
-      "cover": "u2-niemand-gesagt-cover.jpg",
-      "note": "Codex-ZIP B · Lina+Brand ok · warte POSTEN"
-    },
-    {
-      "id": "U3",
-      "account": "@cyclo.fine",
-      "title": "Umfrage · Mit sechzehn",
-      "kind": "Karussell",
-      "status": "review",
-      "date": "2026-09-13",
-      "cover": "u3-mit-sechzehn-cover.jpg",
-      "note": "Codex-ZIP C · Lina+Brand ok · warte POSTEN"
-    },
-    {
-      "id": "U4",
-      "account": "@cyclo.fine",
-      "title": "Umfrage · Verständnis",
-      "kind": "Karussell",
-      "status": "review",
-      "date": "2026-09-13",
-      "cover": "u4-verstaendnis-cover.jpg",
-      "note": "Codex-ZIP D · Lina+Brand ok · warte POSTEN"
-    },
-    {
-      "id": "U5",
-      "account": "@cyclo.fine",
-      "title": "Umfrage · Guter Tag",
-      "kind": "Karussell",
-      "status": "review",
-      "date": "2026-09-13",
-      "cover": "u5-guter-tag-cover.jpg",
-      "note": "Codex-ZIP E · Lina+Brand ok · warte POSTEN"
+      "date": null,
+      "cover": "remotion-v2-cover.jpg",
+      "video": "CycloFine-Face-Reel-Remotion-v2-chat.mp4",
+      "note": "Draft · Brand Fail zu Untertiteln gekippt · kein POSTEN"
     }
   ],
   "wishes": []
