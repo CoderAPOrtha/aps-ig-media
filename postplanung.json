@@ -124,10 +124,20 @@
       "account": "@cyclo.fine",
       "title": "Influencer-Creator IC-v2",
       "kind": "Karussell",
-      "status": "geplant",
+      "status": "live",
       "date": "2026-09-22",
-      "cover": "ic-v2-01-cover.jpg",
-      "note": "Stehend freigegeben Di 22.09. 10:00 Berlin · Jules"
+      "cover": "ic-v2-01-20260922.jpg",
+      "note": "Stehend freigegeben Di 22.09. 10:00 Berlin · Jules",
+      "permalink": "https://www.instagram.com/p/DdlR0WFFpa6/",
+      "media_id": "17880348117535234",
+      "media_type": "CAROUSEL_ALBUM",
+      "published_at": "2026-09-22T10:12:50+02:00",
+      "slides": [
+        "ic-v2-01-20260922.jpg",
+        "ic-v2-02-20260922.jpg",
+        "ic-v2-03-20260922.jpg",
+        "ic-v2-04-20260922.jpg"
+      ]
     },
     {
       "id": "R2",
